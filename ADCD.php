@@ -3,14 +3,16 @@
     Assuming you are running Heroku Postgres add-on
 	with default setting*/
 	$link = pg_connect("host=ec2-52-71-85-210.compute-1.amazonaws.com
-	                    dbname=d2ub3mhgv8e8d3
-						user=zxvfrtbzdcafng
-						password=97a1097829459a75351677aa2a6a1fe5525234b53f60f52035348ee7a3a650c8")
+	                    dbname=d2ub3mhgv8e8d3 user=zxvfrtbzdcafng
+						password=97a1097829459a75351677aa2a6a1fe5525234b53f60f52035348ee7a3a650c8");
 
 	// Check connection
 	if($link === false){
 		die("ERROR: Could not connect. ");
+	 else {
+		 echo "Connect to Heroku Postgres has been established";
 	}
+	
 	
 	//Escape user inputs for security
 	//$id = myqli_real_escape_string($link, $_REQUEST['id']);
