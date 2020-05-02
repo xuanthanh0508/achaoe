@@ -27,6 +27,13 @@
 	$price = 100.3;
 	$description = "Default";
 	
+	 echo $id
+	 echo $name
+	 echo $cat
+	 echo $date
+	 echo $price
+	 echo 
+	
 	//Attempt insert query execution
 	$sql = "INSERT INTO Product (Id, Product_Name, Category,Data, Price,Description) VALUES
 	('$id', '$name', '$cat', '$date', '$price', '$description',)";
